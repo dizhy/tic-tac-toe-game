@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=New+Amsterdam&family=Play:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ececec;
+  background-color: rgb(58, 185, 166);
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0 50px;
+  font-family: 'New Amsterdam', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 38px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game {
+  width: 300px;
+  border: 1px #000 solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cell {
+  border: 1px #000 solid;
+  font-size: 64px;
+  cursor: pointer;
+}
+
+.statistic {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  width: 200px;
+  text-align: start;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winsX,
+.draws,
+.winsO,
+.turn {
+  text-transform: uppercase;
+}
+
+.winsX span,
+.draws span,
+.winsO span,
+.turn span {
+  color: #261acd;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.winner {
+  text-decoration: underline;
+  color: #261acd;
+}
+
+.btn-reset {
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 16px;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+
+  text-align: center;
+  outline: none;
+  color: #ececec;
+  background-color: #2f8bd6;
+  border: none;
+  box-shadow: 0 5px #148787;
+
+  transition: 0.3s all;
+}
+
+.btn-reset:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
